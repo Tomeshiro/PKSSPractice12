@@ -2,6 +2,8 @@
 
 ## Mindmap
 
+Здесь представлены ключевые особенности нашей информационной системы
+
 ```mermaid
 mindmap
 Информационная система
@@ -44,6 +46,8 @@ mindmap
 
 ## User Journey Diagram
 
+Здесь представлен путь пользователя
+
 ```mermaid
 journey
     title Общий путь пользователя в информационной системе
@@ -67,6 +71,8 @@ journey
 	  Выход из системы: 3: Читатель
 ```
 ## Квадрант-граф
+
+Здесь представлен квадрант-граф
 
 ```mermaid
 quadrantChart
@@ -93,42 +99,43 @@ quadrantChart
 
 ## GitGraph
 
+Так выглядит наш примерный путь коммитов
+
 ```mermaid
 ---
 title: Git diagram for translator's system
 ---
 gitGraph
-   commit
+   commit id: "Start"
    branch develop
    checkout develop
-   commit
+   commit id: "Start develop"
    branch ClientMicroservice
-   commit
+   commit id: "Client Service creation"
    checkout develop
    merge ClientMicroservice
-   commit
+   commit id: "Client Service integration"
    branch ChapterMicroservice
-   commit
+   commit id: "Chapter service creation"
    checkout develop
    merge ChapterMicroservice
-   commit
+   commit id: "Chapter service integration"
    branch WritingMicroservice
-   commit
+   commit id: "Writing service creation"
    checkout develop
    merge WritingMicroservice
-   commit
+   commit id: "Writing service integration"
    branch MachineTranslatorMicroservice
-   commit
+   commit id: "Machine translation service creation"
    checkout develop
    merge MachineTranslatorMicroservice
-   commit
+   commit id: "Machine creation service integration"
    branch GrammarMicroservice
-   commit
+   commit id: "Grammar service creation"
    checkout develop
    merge GrammarMicroservice
-   commit
+   commit id: "Grammar service integration"
    checkout main
    merge develop
-   commit
+   commit id: "First version"
 ```
-
